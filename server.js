@@ -11,6 +11,7 @@ const app = express();
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());
+require('dotenv').config();
 
 // MongoDB Connection with your credentials
 mongoose.connect(process.env.MONGODB_URI, {
